@@ -166,6 +166,7 @@ void GameListWidget::initialize()
   m_list_view->setFrameStyle(QFrame::NoFrame);
   m_list_view->setSpacing(m_model->getCoverArtSpacing());
   m_list_view->setVerticalScrollMode(QAbstractItemView::ScrollMode::ScrollPerPixel);
+  m_list_view->verticalScrollBar()->setSingleStep(15);
 
   updateListFont();
 
